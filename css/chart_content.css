@@ -1,0 +1,243 @@
+:root {
+  --text_light: #f2f2f2;
+  --dark_background: #333;
+  --list_message: rgb(235, 18, 235);
+  --name_list: orange;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: var(--dark_background);
+  border-radius: 10px;
+}
+
+.chart_wapper {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: white;
+}
+
+/* styling of the header starts here */
+.header {
+  height: 10%;
+  background-color: var(--dark_background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid;
+}
+.header .header_left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrow_left {
+  cursor: pointer;
+}
+.arrow_left i {
+  color: var(--text_light);
+}
+.image_input_input {
+  height: 100%;
+}
+.image_input_input input {
+  height: 100%;
+  opacity: 0;
+}
+.input_image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-color: red;
+  border-radius: 50px;
+  border: 2px solid var(--text_light);
+}
+.search {
+  width: 150px;
+  border: none;
+  outline: none;
+  padding: 2px 5px;
+  display: none;
+}
+.search :focus {
+  width: 120px;
+  outline: none;
+  border: none;
+}
+
+.head_right i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* styling for the contaner */
+.container {
+  height: calc(100% - 10%);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* margin-top: -23px; */
+  /* background-color: red; */
+}
+.list_wrapper {
+  width: 100%;
+}
+.user_list {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 10%;
+  background-color: var(--dark_background);
+  padding: 5px;
+  margin: 0px;
+  padding: 5px;
+  border-bottom: 2px solid var(--text_light);
+}
+.user_list .image_side img {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+}
+.image_side {
+  display: flex;
+}
+.image_side .sample_messege {
+  margin-left: 10px;
+}
+.image_side .sample_messege h4 {
+  color: var(--name_list);
+  text-transform: capitalize;
+}
+.image_side .sample_messege p {
+  color: var(--list_message);
+  font-size: 14px;
+}
+.status_side {
+  height: 100%;
+  color: var(--list_message);
+}
+.status_dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+  background-color: green;
+  transform: translate(80px, 10px);
+}
+.floatin_action_button {
+  transform: translateY(-250px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  font-size: 20px;
+  margin-left: 18%;
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+  background-color: var(--name_list);
+}
+
+/* styling of the chat screeen */
+.container{
+    height: 83%;
+    background-color: red;
+}
+.all_messeges {
+  height: 0%;
+}
+
+.all_messeges div .optmessage_wrapper {
+  max-width: 230px;
+}
+.all_messeges div .mymessage_wrapper {
+  max-width: 230px;
+  float: right;
+}
+
+/* styling the bubbles */
+.all_messeges {
+  margin: 5px 10px 10px -7px;
+  /* overflow-y: scroll; */
+}
+
+.your_message {
+  display: flex;
+  margin: 15px;
+  width: 100%;
+}
+.messege_container {
+  max-width: 60%;
+}
+.messege_container p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark_background);
+  font-size: 14px;
+  border-radius: 10px 10px 0px 10px;
+  padding: 5px;
+}
+.time {
+  color: #333;
+  font-size: 11px;
+  padding-right: 10px;
+}
+
+/* my messege style starts here */
+
+.message_container {
+  float: right;
+  width: 50%;
+}
+.my_message {
+  float: right;
+}
+.the_messag {
+  color: var(--dark_background);
+  font-size: 14px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px 10px 10px 0px;
+  margin-bottom: 5px;
+}
+.my_time {
+  display: flex;
+  align-items: center;
+}
+
+.your_message img {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  margin-right: 5px;
+}
+
+/* handing the for mat the botton */
+.write_message{
+    display: flex;
+    height:7% ;
+    padding:10px 10px 0px 10px;
+    width: 375px;
+    /* background-color: blue; */
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.image_icon{
+    position: absolute;
+    padding: 5px;
+    background-color: white;
+    width: 7%;
+    height: 7%;
+}
+.icon_wrapper input{
+    opacity: 0;
+
+}
